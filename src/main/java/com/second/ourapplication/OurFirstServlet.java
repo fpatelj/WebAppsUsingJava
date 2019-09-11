@@ -17,7 +17,7 @@ public class OurFirstServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String ourString = "Hello";
 		
-		String responseText = ourString + i + "times";
+		String responseText = ourString + " " + i + "times";
 		
 		resp.getOutputStream().write(responseText.getBytes());
 		
